@@ -5,13 +5,22 @@ Sample app for [observable-entities-js](https://github.com/TrackableEntities/obs
 > Note: You must install *rxjs* version **5.4.3** or greater, in order to avoid a compilation error.
 > - For more info see this [issue](https://github.com/Reactive-Extensions/RxJS/issues/1487).
 
+> Note: You must change the TypeScript compiler target to "es2015" in **ts.config.json**, **tsconfig.app.json** and **tsconfig.spec.json**.
+> - Apps using observable-entities can support most modern browsers (Chrome, Firefox, Safari, Edge, etc), but they will not be able to support legacy browsers (Internet Explorer).
+
+## Setup
+
+Install **observable-entities** as a runtime dependency from npm.
+
+```
+npm i --save observable-entities
+```
+
 ## Usage
 
 To observe property changes on an object, create a class that extends `ObservableEntity`. Then add a `constructor` that returns `super.proxify(this)`.  For example
 
 ```js
-import { ObservableEntity } from 'observable-entities-js';
-
 export class Product extends ObservableEntity {
   productId: number;
   productName: string;

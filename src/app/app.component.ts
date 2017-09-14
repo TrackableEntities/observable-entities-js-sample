@@ -1,6 +1,6 @@
 import { Product } from './models/product';
 import { Component } from '@angular/core';
-import { ObservableSet } from 'observable-entities-js';
+import { ObservableSet } from 'observable-entities';
 
 @Component({
   selector: 'app-root',

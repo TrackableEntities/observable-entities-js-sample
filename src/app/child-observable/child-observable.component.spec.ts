@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { ObservableSet } from 'observable-entities-js';
-import { Product } from 'observable-entities-js/dist/types/models/product.spec';
+import { ObservableSet } from 'observable-entities';
 
+import { Product } from '../models/product';
 import { ChildObservableComponent } from './child-observable.component';
 
 describe('ChildObservableComponent', () => {

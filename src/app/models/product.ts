@@ -1,4 +1,4 @@
-import { ObservableEntity } from 'observable-entities-js';
+import { ObservableEntity } from 'observable-entities';
 import { Category } from './category';
 
 export class Product extends ObservableEntity {

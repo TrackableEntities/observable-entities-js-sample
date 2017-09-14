@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
-import { INotifyInfo } from 'observable-entities-js';
-import { ObservableSet } from 'observable-entities-js';
+import { INotifyInfo } from 'observable-entities';
+import { ObservableSet } from 'observable-entities';
 import { Subject } from 'rxjs/Subject';
 
 import { Product } from '../models/product';

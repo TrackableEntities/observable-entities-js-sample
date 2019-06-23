@@ -1,14 +1,14 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
 import { INotifyInfo } from 'observable-entities';
 import { ObservableSet } from 'observable-entities';
-import { Subject } from 'rxjs/Subject';
+import { Subject } from 'rxjs';
 
 import { Product } from '../models/product';
 
 @Component({
   selector: 'app-child-observable',
   templateUrl: './child-observable.component.html',
-  styleUrls: ['./child-observable.component.css'],
+  styleUrls: ['./child-observable.component.sass'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ChildObservableComponent implements OnInit {

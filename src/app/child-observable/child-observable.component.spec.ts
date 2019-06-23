@@ -1,8 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { ObservableSet } from 'observable-entities';
 
-import { Product } from '../models/product';
 import { ChildObservableComponent } from './child-observable.component';
+import { ObservableSet } from 'observable-entities';
+import { Product } from '../models/product';
 
 describe('ChildObservableComponent', () => {
   let component: ChildObservableComponent;
@@ -22,7 +22,7 @@ describe('ChildObservableComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should be created', () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });
